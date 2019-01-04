@@ -55,6 +55,7 @@ exports.cssLoaders = function (options) {
   }
   let sassResourcePaths = [
     path.resolve(__dirname, '../src/style/module/fun.scss'),
+    path.resolve(__dirname, '../src/style/main.scss'),
   ]
   // https://vue-loader.vuejs.org/en/configurations/extract-css.html
   return {
