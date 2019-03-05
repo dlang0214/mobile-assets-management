@@ -7,6 +7,7 @@ import Vant from 'vant'
 import 'vant/lib/index.css'
 import '@/filter' // 全局过滤器
 import store from './store' // veux
+import './mock'
 Vue.config.productionTip = false
 Vue.use(Vant)
 

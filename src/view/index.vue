@@ -50,6 +50,7 @@ import TagSearch from '@/components/TagSearch'
 import Notification from '@/components/Notification'
 import FooterBtn from '@/components/FooterBtn'
 import AddIneventor from '@/components/AddInventor'
+import api from '@/api'
 export default {
   name: 'index',
   data () {
@@ -74,7 +75,15 @@ export default {
       isNotifi: true
     }
   },
+  created () {
+    this.getData()
+  },
   methods: {
+    getData () {
+      api.test.getContacts().then(res => {
+        console.log(res, 'uuuuuuuu')
+      })
+    },
     togglePageRouter (item) {
       console.log(5555555)
       this.title = item.title
